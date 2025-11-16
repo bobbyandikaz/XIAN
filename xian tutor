@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <title>Formasi Mercenary - The Great Merchant</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background: #f4f4f4;
+      margin: 20px;
+    }
+    h1 {
+      text-align: center;
+      color: #333;
+    }
+    table {
+      width: 100%;
+      border-collapse: collapse;
+      margin-top: 20px;
+      background: #fff;
+    }
+    th, td {
+      border: 1px solid #ccc;
+      padding: 10px;
+      text-align: center;
+    }
+    th {
+      background: #333;
+      color: #fff;
+    }
+    tr:nth-child(even) {
+      background: #f9f9f9;
+    }
+  </style>
+</head>
+<body>
+  <h1>Formasi Mercenary - The Great Merchant</h1>
+  <table>
+    <tr>
+      <th>Unit</th>
+      <th>Elemen</th>
+      <th>Peran Utama</th>
+      <th>Fungsi Spesifik</th>
+    </tr>
+    <tr>
+      <td>Vajrayaksa</td>
+      <td>Air</td>
+      <td>Tank utama</td>
+      <td>Menahan damage besar, frontline kokoh</td>
+    </tr>
+    <tr>
+      <td>Meng Huo</td>
+      <td>Angin</td>
+      <td>Ketahanan fisik</td>
+      <td>Tambahan defense fisik</td>
+    </tr>
+    <tr>
+      <td>Jumong</td>
+      <td>Magic</td>
+      <td>Ketahanan magic</td>
+      <td>Melindungi tim dari serangan magic</td>
+    </tr>
+    <tr>
+      <td>Monkey Sorcerer</td>
+      <td>-</td>
+      <td>Armor break + DPS</td>
+      <td>Mengurangi defense musuh</td>
+    </tr>
+    <tr>
+      <td>Tsukahara Bokuden</td>
+      <td>Angin</td>
+      <td>Buff critical</td>
+      <td>Meningkatkan critical rate hitter lain</td>
+    </tr>
+    <tr>
+      <td>Yamantaka</td>
+      <td>Angin</td>
+      <td>Burst hitter</td>
+      <td>Damage besar dalam waktu singkat</td>
+    </tr>
+    <tr>
+      <td>Virupaksa</td>
+      <td>Angin</td>
+      <td>Sustained hitter</td>
+      <td>Damage konsisten dalam long fight</td>
+    </tr>
+    <tr>
+      <td>Dancer Diaochan</td>
+      <td>Air</td>
+      <td>Healer/support</td>
+      <td>Pemulihan HP & mana</td>
+    </tr>
+    <tr>
+      <td>Acala</td>
+      <td>Tanah</td>
+      <td>Debuff support</td>
+      <td>Melemahkan musuh</td>
+    </tr>
+    <tr>
+      <td>Premier Baji Rao</td>
+      <td>Tanah</td>
+      <td>Buff/DPS tambahan</td>
+      <td>Memberi buff tanah + damage tambahan</td>
+    </tr>
+  </table>
+</body>
+</html>
