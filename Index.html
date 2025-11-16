@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <title>Formasi Mercenary - XIAN</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background: #0f1220;
+      color: #e7e7ee;
+      margin: 20px;
+    }
+    h1 {
+      text-align: center;
+      color: #4fc3f7;
+    }
+    .grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+      gap: 16px;
+      margin-top: 20px;
+    }
+    .card {
+      background: #171a2b;
+      border: 1px solid #252a42;
+      border-radius: 12px;
+      overflow: hidden;
+    }
+    .card img {
+      width: 100%;
+      height: 160px;
+      object-fit: cover;
+    }
+    .content {
+      padding: 12px;
+    }
+    .title {
+      display: flex;
+      justify-content: space-between;
+      margin-bottom: 6px;
+    }
+    .name { font-weight: bold; }
+    .element {
+      font-size: 12px;
+      padding: 2px 8px;
+      border-radius: 999px;
+      background: #24314f;
+      color: #a7c8ff;
+    }
+    .role { font-size: 14px; color: #a7acc3; margin-bottom: 8px; }
+    .tags { display: flex; flex-wrap: wrap; gap: 6px; }
+    .tag {
+      font-size: 12px;
+      padding: 4px 8px;
+      border: 1px solid #2b3253;
+      border-radius: 8px;
+      background: #1a1f36;
+      color: #cfd5ee;
+    }
+  </style>
+</head>
+<body>
+  <h1>Formasi Mercenary - XIAN</h1>
+  <div class="grid">
+
+    <!-- Vajrayaksa -->
+    <div class="card">
+      <img src="images/vajrayaksa.jpg" alt="Vajrayaksa">
+      <div class="content">
+        <div class="title"><span class="name">Vajrayaksa</span><span class="element">Air</span></div>
+        <div class="role">Tank utama</div>
+        <div class="tags"><span class="tag">Frontline</span><span class="tag">HP & Defense</span></div>
+      </div>
+    </div>
+
+    <!-- Meng Huo -->
+    <div class="card">
+      <img src="images/meng_huo.jpg" alt="Meng Huo">
+      <div class="content">
+        <div class="title"><span class="name">Meng Huo</span><span class="element">Angin</span></div>
+        <div class="role">Ketahanan fisik</div>
+        <div class="tags"><span class="tag">Frontline</span><span class="tag">Physical Resist</span></div>
+      </div>
+    </div>
+
+    <!-- Jumong -->
+    <div class="card">
+      <img src="images/jumong.jpg" alt="Jumong">
+      <div class="content">
+        <div class="title"><span class="name">Jumong</span><span class="element">Petir</span></div>
+        <div class="role">Ketahanan magic</div>
+        <div class="tags"><span class="tag">Backline</span><span class="tag">Magic Resist</span></div>
+      </div>
+    </div>
+
+    <!-- Monkey Sorcerer -->
+    <div class="card">
+      <img src="images/monkey_sorcerer.jpg" alt="Monkey Sorcerer">
+      <div class="content">
+        <div class="title"><span class="name">Monkey Sorcerer</span><span class="element">-</span></div>
+        <div class="role">Armor break + DPS</div>
+        <div class="tags"><span class="tag">Midline</span><span class="tag">Defense Shred</span></div>
+      </div>
+    </div>
+
+    <!-- Tsukahara Bokuden -->
+    <div class="card">
+      <img src="images/bokuden.jpg" alt="Tsukahara Bokuden">
+      <div class="content">
+        <div class="title"><span class="name">Tsukahara Bokuden</span><span class="element">Angin</span></div>
+        <div class="role">Buff critical</div>
+        <div class="tags"><span class="tag">Midline</span><span class="tag">Crit Rate</span></div>
+      </div>
+    </div>
+
+    <!-- Yamantaka -->
+    <div class="card">
+      <img src="images/yamantaka.jpg" alt="Yamantaka">
+      <div class="content">
+        <div class="title"><span class="name">Yamantaka</span><span class="element">Angin</span></div>
+        <div class="role">Burst hitter</div>
+        <div class="tags"><span class="tag">Midline</span><span class="tag">Burst DPS</span></div>
+      </div>
+    </div>
+
+    <!-- Virupaksa -->
+    <div class="card">
+      <img src="images/virupaksa.jpg" alt="Virupaksa">
+      <div class="content">
+        <div class="title"><span class="name">Virupaksa</span><span class="element">Angin</span></div>
+        <div class="role">Sustained hitter</div>
+        <div class="tags"><span class="tag">Backline</span><span class="tag">Long Fight</span></div>
+      </div>
+    </div>
+
+    <!-- Dancer Diaochan -->
+    <div class="card">
+      <img src="images/diaochan.jpg" alt="Diaochan">
+      <div class="content">
+        <div class="title"><span class="name">Dancer Diaochan</span><span class="element">Air</span></div>
+        <div class="role">Healer / mana regen</div>
+        <div class="tags"><span class="tag">Backline</span><span class="tag">Sustain</span></div>
+      </div>
+    </div>
+
+    <!-- Acala -->
+    <div class="card">
+      <img src="images/acala.jpg" alt="Acala">
+      <div class="content">
+        <div class="title"><span class="name">Acala</span><span class="element">Tanah</span></div>
+        <div class="role">Debuff support</div>
+        <div class="tags"><span class="tag">Backline</span><span class="tag">Control</span></div>
+      </div>
+    </div>
+
+    <!-- Premier Baji Rao -->
+    <div class="card">
+      <img src="images/baji_rao.jpg" alt="Premier Baji Rao">
+      <div class="content">
+        <div class="title"><span class="name">Premier Baji Rao</span><span class="element">Tanah</span></div>
+        <div class="role">Buff/DPS tambahan</div>
+        <div class="tags"><span class="tag">Support</span><span class="tag">Utility</span></div>
+      </div>
+    </div>
+
+    <!-- Hong Gil Dong -->
+    <div class="card">
+      <img src="images/hong_gil_dong.jpg" alt="Hong Gil Dong">
+      <div class="content">
+        <div class="title"><span class="name">Hong Gil Dong</span><span class="element">Angin</span></div>
+        <div class="role">Buff elemen Angin</div>
+        <div class="tags"><span class="tag">Support</span><span class="tag">Wind Buff</span></div>
+      </div>
+    </div>
+
+  </div>
+</body>
+</html>
