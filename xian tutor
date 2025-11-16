@@ -3,105 +3,262 @@
 <head>
   <meta charset="UTF-8">
   <title>Formasi Mercenary - The Great Merchant</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
   <style>
+    :root {
+      --bg: #0f1220;
+      --card: #171a2b;
+      --text: #e7e7ee;
+      --muted: #a7acc3;
+      --accent: #4fc3f7;
+      --grid: minmax(240px, 1fr);
+    }
+    * { box-sizing: border-box; }
     body {
-      font-family: Arial, sans-serif;
-      background: #f4f4f4;
-      margin: 20px;
+      font-family: system-ui, -apple-system, Segoe UI, Roboto, Arial, sans-serif;
+      background: radial-gradient(1200px 500px at 20% -10%, #1b2039 0%, #0f1220 55%);
+      color: var(--text);
+      margin: 24px;
     }
-    h1 {
-      text-align: center;
-      color: #333;
+    header { text-align: center; margin-bottom: 24px; }
+    h1 { margin: 0 0 8px; font-size: 28px; }
+    p.subtitle { margin: 0; color: var(--muted); }
+    .grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, var(--grid));
+      gap: 16px;
     }
-    table {
+    .card {
+      background: var(--card);
+      border: 1px solid #252a42;
+      border-radius: 12px;
+      overflow: hidden;
+      display: flex;
+      flex-direction: column;
+    }
+    .img-wrap {
+      aspect-ratio: 16 / 9;
+      background: #0b0d18;
+      display: grid;
+      place-items: center;
+      overflow: hidden;
+    }
+    .img-wrap img {
       width: 100%;
-      border-collapse: collapse;
-      margin-top: 20px;
-      background: #fff;
+      height: 100%;
+      object-fit: cover;
     }
-    th, td {
-      border: 1px solid #ccc;
-      padding: 10px;
-      text-align: center;
+    .content { padding: 12px 14px; }
+    .title {
+      display: flex; justify-content: space-between; align-items: baseline;
+      margin-bottom: 6px;
     }
-    th {
-      background: #333;
-      color: #fff;
+    .name { font-weight: 600; }
+    .element {
+      font-size: 12px; padding: 2px 8px; border-radius: 999px;
+      background: #24314f; color: #a7c8ff; border: 1px solid #39538d;
     }
-    tr:nth-child(even) {
-      background: #f9f9f9;
+    .role { color: var(--muted); font-size: 14px; margin: 6px 0 10px; }
+    .tags { display: flex; flex-wrap: wrap; gap: 6px; }
+    .tag {
+      font-size: 12px; padding: 4px 8px; border: 1px solid #2b3253; border-radius: 8px;
+      color: #cfd5ee; background: #1a1f36;
+    }
+    footer {
+      margin-top: 24px; text-align: center; color: var(--muted); font-size: 13px;
     }
   </style>
 </head>
 <body>
-  <h1>Formasi Mercenary - The Great Merchant</h1>
-  <table>
-    <tr>
-      <th>Unit</th>
-      <th>Elemen</th>
-      <th>Peran Utama</th>
-      <th>Fungsi Spesifik</th>
-    </tr>
-    <tr>
-      <td>Vajrayaksa</td>
-      <td>Air</td>
-      <td>Tank utama</td>
-      <td>Menahan damage besar, frontline kokoh</td>
-    </tr>
-    <tr>
-      <td>Meng Huo</td>
-      <td>Angin</td>
-      <td>Ketahanan fisik</td>
-      <td>Tambahan defense fisik</td>
-    </tr>
-    <tr>
-      <td>Jumong</td>
-      <td>Magic</td>
-      <td>Ketahanan magic</td>
-      <td>Melindungi tim dari serangan magic</td>
-    </tr>
-    <tr>
-      <td>Monkey Sorcerer</td>
-      <td>-</td>
-      <td>Armor break + DPS</td>
-      <td>Mengurangi defense musuh</td>
-    </tr>
-    <tr>
-      <td>Tsukahara Bokuden</td>
-      <td>Angin</td>
-      <td>Buff critical</td>
-      <td>Meningkatkan critical rate hitter lain</td>
-    </tr>
-    <tr>
-      <td>Yamantaka</td>
-      <td>Angin</td>
-      <td>Burst hitter</td>
-      <td>Damage besar dalam waktu singkat</td>
-    </tr>
-    <tr>
-      <td>Virupaksa</td>
-      <td>Angin</td>
-      <td>Sustained hitter</td>
-      <td>Damage konsisten dalam long fight</td>
-    </tr>
-    <tr>
-      <td>Dancer Diaochan</td>
-      <td>Air</td>
-      <td>Healer/support</td>
-      <td>Pemulihan HP & mana</td>
-    </tr>
-    <tr>
-      <td>Acala</td>
-      <td>Tanah</td>
-      <td>Debuff support</td>
-      <td>Melemahkan musuh</td>
-    </tr>
-    <tr>
-      <td>Premier Baji Rao</td>
-      <td>Tanah</td>
-      <td>Buff/DPS tambahan</td>
-      <td>Memberi buff tanah + damage tambahan</td>
-    </tr>
-  </table>
+  <header>
+    <h1>Formasi Mercenary</h1>
+    <p class="subtitle">The Great Merchant — setup hybrid Angin, Air, Tanah</p>
+  </header>
+
+  <section class="grid">
+    <!-- Vajrayaksa -->
+    <article class="card">
+      <div class="img-wrap">
+        <img src="images/vajrayaksa.jpg" alt="Vajrayaksa (Air Tank)">
+      </div>
+      <div class="content">
+        <div class="title">
+          <span class="name">Vajrayaksa</span>
+          <span class="element">Air</span>
+        </div>
+        <div class="role">Tank utama</div>
+        <div class="tags">
+          <span class="tag">Frontline</span>
+          <span class="tag">HP & Defense</span>
+        </div>
+      </div>
+    </article>
+
+    <!-- Meng Huo -->
+    <article class="card">
+      <div class="img-wrap">
+        <img src="images/meng_huo.jpg" alt="Meng Huo (Angin ketahanan fisik)">
+      </div>
+      <div class="content">
+        <div class="title">
+          <span class="name">Meng Huo</span>
+          <span class="element">Angin</span>
+        </div>
+        <div class="role">Ketahanan fisik</div>
+        <div class="tags">
+          <span class="tag">Frontline</span>
+          <span class="tag">Physical Resist</span>
+        </div>
+      </div>
+    </article>
+
+    <!-- Jumong -->
+    <article class="card">
+      <div class="img-wrap">
+        <img src="images/jumong.jpg" alt="Jumong (ketahanan magic)">
+      </div>
+      <div class="content">
+        <div class="title">
+          <span class="name">Jumong</span>
+          <span class="element">Magic</span>
+        </div>
+        <div class="role">Ketahanan magic</div>
+        <div class="tags">
+          <span class="tag">Backline</span>
+          <span class="tag">Magic Resist</span>
+        </div>
+      </div>
+    </article>
+
+    <!-- Monkey Sorcerer -->
+    <article class="card">
+      <div class="img-wrap">
+        <img src="images/monkey_sorcerer.jpg" alt="Monkey Sorcerer (armor break)">
+      </div>
+      <div class="content">
+        <div class="title">
+          <span class="name">Monkey Sorcerer</span>
+          <span class="element">—</span>
+        </div>
+        <div class="role">Armor break + DPS</div>
+        <div class="tags">
+          <span class="tag">Midline</span>
+          <span class="tag">Defense Shred</span>
+        </div>
+      </div>
+    </article>
+
+    <!-- Tsukahara Bokuden -->
+    <article class="card">
+      <div class="img-wrap">
+        <img src="images/tsukahara_bokuden.jpg" alt="Tsukahara Bokuden (buff critical)">
+      </div>
+      <div class="content">
+        <div class="title">
+          <span class="name">Tsukahara Bokuden</span>
+          <span class="element">Angin</span>
+        </div>
+        <div class="role">Buff critical</div>
+        <div class="tags">
+          <span class="tag">Midline</span>
+          <span class="tag">Crit Rate</span>
+        </div>
+      </div>
+    </article>
+
+    <!-- Yamantaka -->
+    <article class="card">
+      <div class="img-wrap">
+        <img src="images/yamantaka.jpg" alt="Yamantaka (Angin burst hitter)">
+      </div>
+      <div class="content">
+        <div class="title">
+          <span class="name">Yamantaka</span>
+          <span class="element">Angin</span>
+        </div>
+        <div class="role">Burst hitter</div>
+        <div class="tags">
+          <span class="tag">Midline</span>
+          <span class="tag">Burst DPS</span>
+        </div>
+      </div>
+    </article>
+
+    <!-- Virupaksa -->
+    <article class="card">
+      <div class="img-wrap">
+        <img src="images/virupaksa.jpg" alt="Virupaksa (Angin sustained hitter)">
+      </div>
+      <div class="content">
+        <div class="title">
+          <span class="name">Virupaksa</span>
+          <span class="element">Angin</span>
+        </div>
+        <div class="role">Sustained hitter</div>
+        <div class="tags">
+          <span class="tag">Backline</span>
+          <span class="tag">Long Fight</span>
+        </div>
+      </div>
+    </article>
+
+    <!-- Dancer Diaochan -->
+    <article class="card">
+      <div class="img-wrap">
+        <img src="images/diaochan.jpg" alt="Dancer Diaochan (Air healer)">
+      </div>
+      <div class="content">
+        <div class="title">
+          <span class="name">Dancer Diaochan</span>
+          <span class="element">Air</span>
+        </div>
+        <div class="role">Healer / mana regen</div>
+        <div class="tags">
+          <span class="tag">Backline</span>
+          <span class="tag">Sustain</span>
+        </div>
+      </div>
+    </article>
+
+    <!-- Acala -->
+    <article class="card">
+      <div class="img-wrap">
+        <img src="images/acala.jpg" alt="Acala (Tanah debuff)">
+      </div>
+      <div class="content">
+        <div class="title">
+          <span class="name">Acala</span>
+          <span class="element">Tanah</span>
+        </div>
+        <div class="role">Debuff melemahkan musuh</div>
+        <div class="tags">
+          <span class="tag">Backline</span>
+          <span class="tag">Control</span>
+        </div>
+      </div>
+    </article>
+
+    <!-- Premier Baji Rao -->
+    <article class="card">
+      <div class="img-wrap">
+        <img src="images/baji_rao.jpg" alt="Premier Baji Rao (Tanah buff/DPS)">
+      </div>
+      <div class="content">
+        <div class="title">
+          <span class="name">Premier Baji Rao</span>
+          <span class="element">Tanah</span>
+        </div>
+        <div class="role">Buff/DPS tambahan</div>
+        <div class="tags">
+          <span class="tag">Support</span>
+          <span class="tag">Utility</span>
+        </div>
+      </div>
+    </article>
+  </section>
+
+  <footer>
+    © Formasi Bobby — dibuat untuk kejelasan setup dan leveling cepat.
+  </footer>
 </body>
 </html>
